@@ -1,0 +1,17 @@
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\BAL.deps.json
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\BAL.dll
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\BAL.pdb
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\CommonLayer.dll
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.csproj.AssemblyReference.cache
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.AssemblyInfoInputs.cache
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.AssemblyInfo.cs
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.csproj.CoreCompileInputs.cache
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.csproj.CopyComplete
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.dll
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\refint\BAL.dll
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\BAL.pdb
+C:\Users\Руслан\source\repos\TechnicalTask\BAL\obj\Debug\net8.0\ref\BAL.dll

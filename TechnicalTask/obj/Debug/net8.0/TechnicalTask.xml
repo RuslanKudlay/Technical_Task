@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TechnicalTask</name>
+    </assembly>
+    <members>
+        <member name="T:TechnicalTask.Controllers.ShopController">
+            <summary>
+            Контролер для роботи з магазинами, клієнтами та їх покупками.
+            </summary>
+            <remarks>
+            Містить методи для отримання клієнтів, товарів, покупок, категорій та іншої супутньої інформації.
+            </remarks>
+        </member>
+        <member name="M:TechnicalTask.Controllers.ShopController.GetBirthdays(System.DateTime)">
+            <summary>
+            Повертає список клієнтів, у яких день народження припадає на вказану дату.
+            
+            Приклад запиту:
+            GET api/Shop/birthdays?date=1985-07-12 00:00:00.0000000
+            </summary>
+            <param name="date">Дата, за якою здійснюється пошук (враховуються лише день та місяць).</param>
+            <returns>Список клієнтів з відповідним днем народження.</returns>
+            <summary>
+            GET api/Shop/birthdays?date=1985-07-12 00:00:00.0000000
+            </summary>
+            <param name="date">Дата для отримання даних клієнтів</param>
+            <returns></returns>
+        </member>
+        <member name="M:TechnicalTask.Controllers.ShopController.GetRecentBuyers(System.Int32)">
+            <summary>
+            Повертає список клієнтів, які здійснювали покупки протягом останніх N днів.
+            
+            Приклад запиту:
+            GET api/Shop/recent-buyers?days=5
+            </summary>
+            <param name="days">Кількість останніх днів, за які потрібно знайти клієнтів з покупками.</param>
+            <returns>Список клієнтів з датою їх останньої покупки.</returns>
+        </member>
+        <member name="M:TechnicalTask.Controllers.ShopController.GetPopularCategories(System.Int32)">
+            <summary>
+            Повертає найпопулярніші категорії товарів, які купував конкретний клієнт.
+            
+            
+            Приклад запиту:
+            GET api/Shop/popular-categories?customerId=2
+            </summary>
+            <param name="customerId">Ідентифікатор користувача</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
