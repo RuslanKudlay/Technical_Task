@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommonLayer.DTOs
 {
-    public class PopularCustomerCategotyDto
+    public record PopularCustomerCategotyDto
     {
         public string Category { get; set; } = string.Empty;
         public int TotalQuantity { get; set; }

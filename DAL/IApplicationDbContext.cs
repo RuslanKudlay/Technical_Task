@@ -14,5 +14,7 @@ namespace DAL
         DbSet<Product> Products { get; set; }
         DbSet<Purchase> Purchases { get; set; }
         DbSet<PurchaseItem> PurchaseItems { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

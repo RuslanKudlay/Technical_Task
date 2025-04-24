@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CommonLayer.DTOs
 {
-    public class DayRecentCustomerDto
+    public record DayRecentCustomerDto
     {
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public string FullName { get; set; }
         public DateTime LastPurchaseDate { get; set; }
     }

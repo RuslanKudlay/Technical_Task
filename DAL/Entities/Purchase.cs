@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class Purchase
+    public class Purchase : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime Date { get; set; }
+        public Guid Id { get; set; }
         public decimal TotalPrice { get; set; }
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public Customer Customer { get; set; } = null!;
         public List<PurchaseItem> Items { get; set; } = new();
     }

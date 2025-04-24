@@ -33,8 +33,11 @@ namespace TechnicalTask
                 dbOptions.UseSqlServer(connectionString);
             });
 
+
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<IPurchaseService, PurchaseService>();
             builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
-            builder.Services.AddScoped<IShopService, ShopService>();
 
             var app = builder.Build();
 
@@ -43,8 +46,6 @@ namespace TechnicalTask
                 var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
                 context.Database.Migrate();
-
-                context.Seed();
             }
 
             // Configure the HTTP request pipeline.

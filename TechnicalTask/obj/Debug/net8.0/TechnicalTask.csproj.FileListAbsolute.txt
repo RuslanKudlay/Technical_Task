@@ -174,3 +174,4 @@ C:\Users\Руслан\source\repos\TechnicalTask\TechnicalTask\bin\Debug\net8.0\
 C:\Users\Руслан\source\repos\TechnicalTask\TechnicalTask\bin\Debug\net8.0\CommonLayer.dll
 C:\Users\Руслан\source\repos\TechnicalTask\TechnicalTask\bin\Debug\net8.0\BAL.pdb
 C:\Users\Руслан\source\repos\TechnicalTask\TechnicalTask\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\Руслан\source\repos\TechnicalTask\TechnicalTask\obj\Debug\net8.0\TechnicalTask.sourcelink.json

@@ -9,3 +9,4 @@ C:\Users\Руслан\source\repos\TechnicalTask\CommonLayer\obj\Debug\net8.0\Co
 C:\Users\Руслан\source\repos\TechnicalTask\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
 C:\Users\Руслан\source\repos\TechnicalTask\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
 C:\Users\Руслан\source\repos\TechnicalTask\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll
+C:\Users\Руслан\source\repos\TechnicalTask\CommonLayer\obj\Debug\net8.0\CommonLayer.sourcelink.json

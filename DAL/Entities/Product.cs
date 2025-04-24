@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class Product
+    public class Product : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Category { get; set; } = string.Empty;
         public string Article { get; set; } = string.Empty;

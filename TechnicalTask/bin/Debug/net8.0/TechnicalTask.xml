@@ -4,15 +4,38 @@
         <name>TechnicalTask</name>
     </assembly>
     <members>
-        <member name="T:TechnicalTask.Controllers.ShopController">
+        <member name="T:TechnicalTask.Controllers.CustomerController">
             <summary>
-            Контролер для роботи з магазинами, клієнтами та їх покупками.
+            Контролер для роботи з клієнтами.
             </summary>
             <remarks>
-            Містить методи для отримання клієнтів, товарів, покупок, категорій та іншої супутньої інформації.
             </remarks>
         </member>
-        <member name="M:TechnicalTask.Controllers.ShopController.GetBirthdays(System.DateTime)">
+        <member name="M:TechnicalTask.Controllers.CustomerController.GetCustomers">
+            <summary>
+            Отримати клієнтів
+            
+            Приклад запиту:
+            GET api/Customer/all
+            </summary>
+            <returns>Масив клієнтів</returns>
+        </member>
+        <member name="M:TechnicalTask.Controllers.CustomerController.GetBirthdays(CommonLayer.Customer.CreateCustomerDto)">
+            <summary>
+            Створити клієнта
+            
+            Приклад запиту:
+            POST api/Customer/create
+            BODY 
+            {
+               "FullName": "Іван Іванович Бондар",
+               "BirthDate": 1990-04-24
+            }
+            </summary>
+            <param name="customerDto">Необхідні поля для створення користувача</param>
+            <returns></returns>
+        </member>
+        <member name="M:TechnicalTask.Controllers.CustomerController.GetBirthdays(System.DateTime)">
             <summary>
             Повертає список клієнтів, у яких день народження припадає на вказану дату.
             
@@ -27,7 +50,7 @@
             <param name="date">Дата для отримання даних клієнтів</param>
             <returns></returns>
         </member>
-        <member name="M:TechnicalTask.Controllers.ShopController.GetRecentBuyers(System.Int32)">
+        <member name="M:TechnicalTask.Controllers.CustomerController.GetRecentBuyers(System.Int32)">
             <summary>
             Повертає список клієнтів, які здійснювали покупки протягом останніх N днів.
             
@@ -37,7 +60,7 @@
             <param name="days">Кількість останніх днів, за які потрібно знайти клієнтів з покупками.</param>
             <returns>Список клієнтів з датою їх останньої покупки.</returns>
         </member>
-        <member name="M:TechnicalTask.Controllers.ShopController.GetPopularCategories(System.Int32)">
+        <member name="M:TechnicalTask.Controllers.CustomerController.GetPopularCategories(System.Guid)">
             <summary>
             Повертає найпопулярніші категорії товарів, які купував конкретний клієнт.
             
@@ -46,6 +69,66 @@
             GET api/Shop/popular-categories?customerId=2
             </summary>
             <param name="customerId">Ідентифікатор користувача</param>
+            <returns></returns>
+        </member>
+        <member name="T:TechnicalTask.Controllers.ProductController">
+            <summary>
+            Контролер для роботи з продуктами.
+            </summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:TechnicalTask.Controllers.ProductController.GetCustomers">
+            <summary>
+            Отримати продукти
+            
+            Приклад запиту:
+            GET api/Product/all
+            </summary>
+            <returns>Масив продуктів</returns>
+        </member>
+        <member name="M:TechnicalTask.Controllers.ProductController.GetBirthdays(CommonLayer.Product.CreateProductDto)">
+            <summary>
+            Створити продукт
+            
+            Приклад запиту:
+            POST api/Product/create
+            BODY 
+            {
+               "Name": "Хліб",
+               "Category": "Харчі",
+               "Article": "45245",
+               "Price": 25.5
+            }
+            </summary>
+            <param name="productDto">Необхідні поля для створення продукта</param>
+            <returns></returns>
+        </member>
+        <member name="T:TechnicalTask.Controllers.PurchaseController">
+            <summary>
+            Контролер для роботи з покупками.
+            </summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:TechnicalTask.Controllers.PurchaseController.GetBirthdays(CommonLayer.Purchase.PurchaseDto)">
+            <summary>
+            Зробити покупку
+            
+            Приклад запиту:
+            POST api/Purchase/create
+            BODY 
+            {
+               "CustomerId": 002AE995-A979-4993-9AC8-429899A33444,
+               "PurchaseItemDtos": [
+                    {
+                      "ProductId": ACC4C9D3-7563-4AFB-9E5F-32C815399E5E,
+                      "Quantity": 4
+                    }
+               ]
+            }
+            </summary>
+            <param name="purchaseDto">Необхідні поля для створення покупки</param>
             <returns></returns>
         </member>
     </members>
