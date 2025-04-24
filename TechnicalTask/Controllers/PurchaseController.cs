@@ -42,7 +42,7 @@ namespace TechnicalTask.Controllers
         /// <param name="purchaseDto">Необхідні поля для створення покупки</param>
         /// <returns></returns>
         [HttpPost("create")]
-        public async Task<IActionResult> GetBirthdays([FromBody] PurchaseDto purchaseDto)
+        public async Task<IActionResult> DoPurchase([FromBody] PurchaseDto purchaseDto)
         {
             try
             {
